@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    nixvim.homeManagerModules.nixvim
+    ./nixvim.nix
+  ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "amadeus";
@@ -17,11 +21,11 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    pkgs.hello
-    pkgs.git-credential-oauth
+    hello
+    git-credential-oauth
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -105,7 +109,7 @@
   programs.fastfetch = {
     enable = true;
   };
-  programs.ripgrep= {
+  programs.ripgrep = {
     enable = true;
   };
   programs.fzf = {
@@ -122,21 +126,24 @@
   };
 
   programs.git = {
-      enable = true;
-      userName = "Amadeus Mader";
-      userEmail = "amadeus@mozart409.com";
-      ignores = [ "*~" "*.swp" ];
-      aliases = {
-        ci = "commit";
-        s = "status";
-        f = "fetch";
-      };
-      extraConfig = {
-        init.defaultBranch = "main";
-        pull.rebase = "true";
-        credential.helper = "oauth";
-      };
+    enable = true;
+    userName = "Amadeus Mader";
+    userEmail = "amadeus@mozart409.com";
+    ignores = [
+      "*~"
+      "*.swp"
+    ];
+    aliases = {
+      ci = "commit";
+      s = "status";
+      f = "fetch";
     };
+    extraConfig = {
+      init.defaultBranch = "main";
+      pull.rebase = "true";
+      credential.helper = "oauth";
+    };
+  };
   programs.lazygit = {
     enable = true;
     settings.gui.theme = {
