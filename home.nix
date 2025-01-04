@@ -1,8 +1,13 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
-    nixvim.homeManagerModules.nixvim
+    # inputs.nixvim.homeManagerModules.nixvim
     ./nixvim.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -26,7 +31,7 @@
     # # "Hello, world!" when run.
     hello
     git-credential-oauth
-
+    neovim
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -73,7 +78,7 @@
   #  /etc/profiles/per-user/amadeus/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "neovim";
   };
 
   programs.zsh = {

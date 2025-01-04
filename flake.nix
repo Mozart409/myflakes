@@ -16,8 +16,9 @@
       nixpkgs,
       home-manager,
       treefmt-nix,
+      nixvim,
       ...
-    }:
+    }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -28,6 +29,8 @@
       nixosConfigurations = {
         nixos = lib.nixosSystem {
           inherit system;
+          specialArgs = { inherit inputs; };
+
           modules = [ ./configuration.nix ];
         };
       };
@@ -36,7 +39,10 @@
       homeConfigurations = {
         amadeus = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ];
+          modules = [
+            ./home.nix
+            inputs.nixvim.homeManagerModules.nixvim
+          ];
         };
       };
       # packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
