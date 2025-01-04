@@ -86,6 +86,7 @@
     };
     shellAliases = {
       l = "ls -lah";
+      lg = "lazygit";
     };
   };
 
