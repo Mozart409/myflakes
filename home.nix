@@ -3,9 +3,7 @@
   pkgs,
   inputs,
   ...
-}:
-
-{
+}: {
   imports = [
     # inputs.nixvim.homeManagerModules.nixvim
     ./nixvim.nix
@@ -36,6 +34,7 @@
     openrgb-with-all-plugins
     kubectl
     xclip
+    alejandra
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -91,7 +90,6 @@
     historySubstringSearch.enable = true;
     syntaxHighlighting = {
       enable = true;
-
     };
     autosuggestion = {
       enable = true;
@@ -105,7 +103,7 @@
 
   programs.librewolf = {
     enable = true;
-    languagePacks = [ "en-US" ];
+    languagePacks = ["en-US"];
     settings = {
       "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
@@ -128,7 +126,6 @@
   programs.gh = {
     enable = true;
     gitCredentialHelper.enable = true;
-
   };
   programs.k9s = {
     enable = true;
@@ -160,13 +157,13 @@
         "#89b4fa"
         "bold"
       ];
-      inactiveBorderColor = [ "#a6adc8" ];
-      optionsTextColor = [ "#89b4fa" ];
-      selectedLineBgColor = [ "#313244" ];
-      selectedRangeBgColor = [ "#313244" ];
-      unstagedChangesColor = [ "#f38ba8" ];
-      defaultFgColor = [ "#cdd6f4" ];
-      searchingActiveBorderColor = [ "#f9e2af" ];
+      inactiveBorderColor = ["#a6adc8"];
+      optionsTextColor = ["#89b4fa"];
+      selectedLineBgColor = ["#313244"];
+      selectedRangeBgColor = ["#313244"];
+      unstagedChangesColor = ["#f38ba8"];
+      defaultFgColor = ["#cdd6f4"];
+      searchingActiveBorderColor = ["#f9e2af"];
     };
   };
 

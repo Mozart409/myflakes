@@ -3,8 +3,7 @@
   lib,
   pkgs,
   ...
-}:
-{
+}: {
   programs.nixvim = {
     enable = true;
 
@@ -50,7 +49,6 @@
     ];
 
     plugins = {
-
       # UI
       web-devicons.enable = true;
       lualine.enable = true;
@@ -131,5 +129,4 @@
       };
     };
   };
-
 }
