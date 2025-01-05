@@ -113,7 +113,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
@@ -133,7 +133,7 @@
     ];
     packages = with pkgs; [
       kdePackages.kate
-      #  thunderbird
+      thunderbird
     ];
   };
 
@@ -160,7 +160,6 @@
     git
     wezterm
     nixfmt-rfc-style
-    neovim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

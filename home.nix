@@ -30,11 +30,12 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     hello
-    neovim
     git-credential-oauth
     eza
     nettools
     openrgb-with-all-plugins
+    kubectl
+    xclip
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -98,6 +99,7 @@
     shellAliases = {
       l = "ls -lah";
       lg = "lazygit";
+      k = "kubectl";
     };
   };
 
