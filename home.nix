@@ -3,7 +3,8 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     # inputs.nixvim.homeManagerModules.nixvim
     ./nixvim.nix
@@ -104,7 +105,7 @@
 
   programs.librewolf = {
     enable = true;
-    languagePacks = ["en-US"];
+    languagePacks = [ "en-US" ];
     settings = {
       "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
@@ -158,14 +159,21 @@
         "#89b4fa"
         "bold"
       ];
-      inactiveBorderColor = ["#a6adc8"];
-      optionsTextColor = ["#89b4fa"];
-      selectedLineBgColor = ["#313244"];
-      selectedRangeBgColor = ["#313244"];
-      unstagedChangesColor = ["#f38ba8"];
-      defaultFgColor = ["#cdd6f4"];
-      searchingActiveBorderColor = ["#f9e2af"];
+      inactiveBorderColor = [ "#a6adc8" ];
+      optionsTextColor = [ "#89b4fa" ];
+      selectedLineBgColor = [ "#313244" ];
+      selectedRangeBgColor = [ "#313244" ];
+      unstagedChangesColor = [ "#f38ba8" ];
+      defaultFgColor = [ "#cdd6f4" ];
+      searchingActiveBorderColor = [ "#f9e2af" ];
     };
+  };
+
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 3";
+    flake = "/home/amadeus/myflakes";
   };
 
   # Let Home Manager install and manage itself.

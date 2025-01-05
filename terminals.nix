@@ -1,14 +1,14 @@
-
 {
   config,
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   programs.kitty = {
     enable = true;
-    shellIntegration.enableZshIntegration=true;
-    font = "FiraCode";
+    shellIntegration.enableZshIntegration = true;
+    # font = "FiraCode";
     themeFile = "kanagawa_dragon";
     settings = {
       scrollback_lines = 10000;
@@ -17,4 +17,4 @@
     };
 
   };
-  }
+}

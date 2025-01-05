@@ -9,38 +9,41 @@
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    nixvim,
-    ...
-  } @ inputs: let
-    lib = nixpkgs.lib;
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
-    nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
-        specialArgs = {inherit inputs;};
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }@inputs:
+    let
+      lib = nixpkgs.lib;
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    {
+      nixosConfigurations = {
+        nixos = lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
 
-        modules = [./configuration.nix];
+          modules = [ ./configuration.nix ];
+        };
       };
-    };
 
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
-    homeConfigurations = {
-      amadeus = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [
-          ./home.nix
-          inputs.nixvim.homeManagerModules.nixvim
-        ];
+      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
+      homeConfigurations = {
+        amadeus = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./home.nix
+            inputs.nixvim.homeManagerModules.nixvim
+          ];
+        };
       };
-    };
-    # packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
+      # packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
 
-    # packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
-  };
+      # packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+    };
 }

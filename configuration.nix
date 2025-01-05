@@ -5,7 +5,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -33,7 +34,7 @@
     enable = true;
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
     # Modesetting is required.
@@ -148,7 +149,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  environment.shells = with pkgs; [zsh];
+  environment.shells = with pkgs; [ zsh ];
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
   # List packages installed in system profile. To search, run:
