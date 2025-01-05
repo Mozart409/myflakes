@@ -36,7 +36,7 @@
     openrgb-with-all-plugins
     kubectl
     xclip
-    alejandra
+    nh
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -167,13 +167,6 @@
       defaultFgColor = [ "#cdd6f4" ];
       searchingActiveBorderColor = [ "#f9e2af" ];
     };
-  };
-
-  programs.nh = {
-    enable = true;
-    clean.enable = true;
-    clean.extraArgs = "--keep-since 4d --keep 3";
-    flake = "/home/amadeus/myflakes";
   };
 
   # Let Home Manager install and manage itself.
