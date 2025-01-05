@@ -23,23 +23,28 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.dimensions = {
-        lines = 40;
-        columns = 120;
-        working_directory = "/home/amadeus/code";
-        live_config_reload = "true";
-        mouse = {
-          hide_when_typing = "true";
+      window = {
+        decorations = "Full";
+        dynamic_padding = true;
+        padding = {
+          x = 5;
+          y = 5;
         };
-        font = {
-          size = 13;
-          normal = {
-            family = "JetBrainsMono Nerd Font";
-            style = "Regular";
-          };
-        };
+        startup_mode = "Windowed";
+        dynamic_title = false;
       };
 
+      working_directory = "/home/amadeus/code";
+      scrolling.history = 10000;
+
+      font = {
+        normal.family = "JetBrainsMono Nerd Font";
+        bold.family = "JetBrainsMono Nerd Font";
+        italic.family = "JetBrainsMono Nerd Font";
+        size = 13;
+      };
+
+      window.opacity = 1.0;
     };
   };
 }
