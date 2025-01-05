@@ -31,10 +31,10 @@
           y = 5;
         };
         startup_mode = "Windowed";
-        dynamic_title = false;
+        dynamic_title = true;
       };
 
-      working_directory = "/home/amadeus/code";
+      general.working_directory = "/home/amadeus/code";
       scrolling.history = 10000;
 
       font = {
