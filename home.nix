@@ -40,6 +40,9 @@
     nerd-fonts.jetbrains-mono
     gnome-boxes
     deluge
+    just
+    rustscan
+    rustup
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
