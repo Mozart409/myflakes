@@ -38,6 +38,8 @@
     xclip
     nh
     nerd-fonts.jetbrains-mono
+    gnome-boxes
+    deluge
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
