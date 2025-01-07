@@ -43,6 +43,7 @@
     just
     rustscan
     rustup
+    gccgo14
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
