@@ -43,7 +43,11 @@
     just
     rustscan
     rustup
+    bacon
     gccgo14
+    qogir-kde
+    sweet-nova
+    arc-kde-theme
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
@@ -171,6 +175,21 @@
     };
   };
 
+  programs.plasma = {
+    enable = true;
+    workspace = {
+      lookAndFeel = "com.github.vinceliuice.Qogir-dark";
+      cursor.theme = "Sweet-cursor";
+      wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
+    };
+    kwin = {
+      edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
+      cornerBarrier = false;
+
+      scripts.polonium.enable = true;
+    };
+
+  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
