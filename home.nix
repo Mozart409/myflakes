@@ -182,10 +182,9 @@
     workspace = {
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
       cursor = {
-        size = 32;
-        theme = "catppuccin-cursors.mochaMauve";
+        theme = "qogir-manjaro";
       };
-      iconTheme = "qogir-icon-theme";
+      iconTheme = "qogir-dark";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
     };
     kwin = {
