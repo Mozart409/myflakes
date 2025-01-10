@@ -183,7 +183,6 @@
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
       cursor = {
         size = 32;
-        name = "Catppuccin";
         package = pkgs.catppuccin-cursors.mochaMauve;
 
       };
