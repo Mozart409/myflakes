@@ -182,15 +182,15 @@
     workspace = {
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
       cursor = {
-        theme = "qogir-manjaro";
+        theme = "Qogir-manjaro";
+        size = 30;
       };
-      iconTheme = "qogir-dark";
+      iconTheme = "Qogir-dark";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
     };
     kwin = {
       edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
       cornerBarrier = false;
-
       scripts.polonium.enable = true;
     };
 
