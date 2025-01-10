@@ -183,13 +183,9 @@
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
       cursor = {
         size = 32;
-        package = pkgs.catppuccin-cursors.mochaMauve;
-
+        theme = "catppuccin-cursors.mochaMauve";
       };
-      iconTheme = {
-        name = "Qogir";
-        package = pkgs.qogir-icon-theme;
-      };
+      iconTheme = "qogir-icon-theme";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
     };
     kwin = {
