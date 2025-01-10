@@ -48,6 +48,8 @@
     qogir-kde
     sweet-nova
     arc-kde-theme
+    qogir-icon-theme
+    catppuccin-cursors
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
@@ -179,7 +181,16 @@
     enable = true;
     workspace = {
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
-      cursor.theme = "Sweet-cursor";
+      cursor = {
+        size = 32;
+        name = "Catppuccin";
+        package = pkgs.catppuccin-cursors.mochaMauve;
+
+      };
+      iconTheme = {
+        name = "Qogir";
+        package = pkgs.qogir-icon-theme;
+      };
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
     };
     kwin = {
