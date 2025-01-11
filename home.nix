@@ -55,6 +55,8 @@
     nettools
     nodejs_22
     tpi
+    crane
+    talosctl
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
