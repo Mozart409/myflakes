@@ -51,6 +51,7 @@
     qogir-icon-theme
     catppuccin-cursors
     tela-circle-icon-theme
+    prismlauncher
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
@@ -186,13 +187,12 @@
         theme = "Qogir-manjaro";
         size = 30;
       };
-      iconTheme = "Qogir-dark";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Qogir-ubuntu-dark/contents/image/1920x1080.jpg";
     };
     kwin = {
       edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
       cornerBarrier = false;
-      scripts.polonium.enable = true;
+      scripts.polonium.enable = false;
     };
 
   };
