@@ -52,6 +52,9 @@
     catppuccin-cursors
     tela-circle-icon-theme
     prismlauncher
+    nettools
+    nodejs_22
+    tpi
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
