@@ -50,6 +50,7 @@
     arc-kde-theme
     qogir-icon-theme
     catppuccin-cursors
+    tela-circle-icon-theme
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
