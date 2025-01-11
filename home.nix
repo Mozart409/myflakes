@@ -180,7 +180,7 @@
   };
 
   programs.plasma = {
-    enable = true;
+    enable = false;
     workspace = {
       lookAndFeel = "com.github.vinceliuice.Qogir-dark";
       cursor = {
