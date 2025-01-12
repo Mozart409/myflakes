@@ -62,6 +62,7 @@
     xclip
     hcloud
     jq
+    pnpm
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
