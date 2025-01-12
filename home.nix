@@ -57,6 +57,11 @@
     tpi
     crane
     talosctl
+    kubie
+    kubectl
+    xclip
+    hcloud
+    jq
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
