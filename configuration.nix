@@ -131,12 +131,15 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "docker"
     ];
     packages = with pkgs; [
       kdePackages.kate
       thunderbird
     ];
   };
+
+  virtualisation.docker.enable = true;
 
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;

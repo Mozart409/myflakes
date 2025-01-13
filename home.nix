@@ -63,6 +63,8 @@
     hcloud
     jq
     pnpm
+    rainfrog
+    lazydocker
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
