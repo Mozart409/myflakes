@@ -65,6 +65,7 @@
     pnpm
     rainfrog
     lazydocker
+    gparted
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
