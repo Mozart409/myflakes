@@ -68,6 +68,8 @@
     gparted
     steam-devices-udev-rules
     rclone
+    mangojuice
+    mangohud
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
