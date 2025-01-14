@@ -66,6 +66,8 @@
     rainfrog
     lazydocker
     gparted
+    mangohud
+    mangojuice
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
@@ -104,6 +106,10 @@
   home.sessionVariables = {
     EDITOR = "neovim";
   };
+  home.sessionPath = [
+    "/var/lib/flatpak/exports/share"
+    "/home/amadeus/.local/share/flatpak/exports/share"
+  ];
   programs.zsh = {
     enable = true;
     autocd = true;
@@ -209,12 +215,6 @@
       scripts.polonium.enable = false;
     };
 
-  };
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
   # Let Home Manager install and manage itself.
