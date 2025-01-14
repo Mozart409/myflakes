@@ -66,8 +66,8 @@
     rainfrog
     lazydocker
     gparted
-    mangohud
-    mangojuice
+    steam-devices-udev-rules
+    rclone
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
