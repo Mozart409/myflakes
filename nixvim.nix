@@ -16,6 +16,8 @@
       alejandra
       d2
       vimPlugins.lazygit-nvim
+      vimPlugins.ollama-nvim
+      vimPlugins.plenary-nvim
     ];
     enable = true;
 

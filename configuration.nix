@@ -5,8 +5,7 @@
   config,
   pkgs,
   ...
-}:
-{
+}: {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -34,9 +33,31 @@
     enable = true;
   };
 
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = ["nvidia"];
 
   services.flatpak.enable = true;
+
+  /*
+     systemd.user.services.ollama = {
+    Unit = {
+      Description = "Server for local large language models";
+
+      After = ["network.target"];
+    };
+
+    Service = {
+      ExecStart = "ollama serve";
+      User = "ollama";
+      Group = "ollama";
+      Restart = "always";
+      RestartSec = 3;
+    };
+
+    Install = {
+      WantedBy = ["default.target"];
+    };
+  };
+  */
 
   hardware.nvidia = {
     # Modesetting is required.
@@ -154,7 +175,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  environment.shells = with pkgs; [ zsh ];
+  environment.shells = with pkgs; [zsh];
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
   # List packages installed in system profile. To search, run:
