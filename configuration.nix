@@ -166,6 +166,7 @@
     git
     wezterm
     nixfmt-rfc-style
+    ollama-cuda
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

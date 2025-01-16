@@ -70,7 +70,6 @@
     rclone
     vulnix
     mangojuice
-    ollama-cuda
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
