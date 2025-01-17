@@ -148,7 +148,6 @@
         closeIfLastWindow = true;
       };
       noice = {
-        # WARNING: This is considered experimental feature, but provides nice UX
         enable = false;
         settings.presets = {
           bottom_search = true;
@@ -174,7 +173,8 @@
             action = "buffers";
           };
 
-          /* "<leader>/" = {
+          /*
+             "<leader>/" = {
             options.desc = "[/] Fuzzily search in current buffer";
 
             action = ''
@@ -200,7 +200,8 @@
               end
             '';
           };
-        }; */
+          */
+        };
         extensions = {
           file-browser.enable = true;
         };
