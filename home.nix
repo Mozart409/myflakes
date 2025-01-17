@@ -3,8 +3,7 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   imports = [
     # inputs.nixvim.homeManagerModules.nixvim
     ./nixvim.nix
@@ -14,6 +13,8 @@
   # manage.
   home.username = "amadeus";
   home.homeDirectory = "/home/amadeus";
+
+  home-manager.users.amadeus.nixpkgs.config.allowUnfree = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -70,6 +71,7 @@
     rclone
     vulnix
     mangojuice
+    docker-init
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
@@ -137,7 +139,7 @@
 
   programs.librewolf = {
     enable = true;
-    languagePacks = [ "en-US" ];
+    languagePacks = ["en-US"];
     settings = {
       "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
@@ -191,13 +193,13 @@
         "#89b4fa"
         "bold"
       ];
-      inactiveBorderColor = [ "#a6adc8" ];
-      optionsTextColor = [ "#89b4fa" ];
-      selectedLineBgColor = [ "#313244" ];
-      selectedRangeBgColor = [ "#313244" ];
-      unstagedChangesColor = [ "#f38ba8" ];
-      defaultFgColor = [ "#cdd6f4" ];
-      searchingActiveBorderColor = [ "#f9e2af" ];
+      inactiveBorderColor = ["#a6adc8"];
+      optionsTextColor = ["#89b4fa"];
+      selectedLineBgColor = ["#313244"];
+      selectedRangeBgColor = ["#313244"];
+      unstagedChangesColor = ["#f38ba8"];
+      defaultFgColor = ["#cdd6f4"];
+      searchingActiveBorderColor = ["#f9e2af"];
     };
   };
 
@@ -216,7 +218,6 @@
       cornerBarrier = false;
       scripts.polonium.enable = false;
     };
-
   };
 
   # Let Home Manager install and manage itself.
