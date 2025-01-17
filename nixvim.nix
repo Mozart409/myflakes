@@ -22,7 +22,7 @@
     enable = true;
 
     extraConfigLua = ''
-      require("telescope").load_extension("lazygit")
+      require("telescope").load_extension("lazygit-nvim")
     '';
 
     colorschemes.catppuccin.enable = false;
