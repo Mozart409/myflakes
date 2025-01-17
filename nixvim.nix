@@ -174,7 +174,7 @@
             action = "buffers";
           };
 
-          "<leader>/" = {
+          /* "<leader>/" = {
             options.desc = "[/] Fuzzily search in current buffer";
 
             action = ''
@@ -200,7 +200,7 @@
               end
             '';
           };
-        };
+        }; */
         extensions = {
           file-browser.enable = true;
         };
