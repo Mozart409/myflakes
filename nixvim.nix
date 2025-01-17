@@ -21,9 +21,11 @@
     ];
     enable = true;
 
-    extraConfigLua = ''
+    /*
+       extraConfigLua = ''
       require("telescope").load_extension("lazygit-nvim")
     '';
+    */
 
     colorschemes.catppuccin.enable = false;
     colorschemes.kanagawa.enable = true;
