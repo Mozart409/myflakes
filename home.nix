@@ -78,12 +78,6 @@
     mangojuice
     docker-init
     dprint
-    dprint-plugins.dprint-plugin-toml
-    dprint-plugins.dprint-plugin-json
-    dprint-plugins.g-plane-pretty_yaml
-    dprint-plugins.dprint-plugin-markdown
-    dprint-plugins.dprint-plugin-typescript
-    dprint-plugins.dprint-plugin-dockerfile
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
