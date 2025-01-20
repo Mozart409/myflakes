@@ -77,6 +77,8 @@
     vulnix
     mangojuice
     docker-init
+    tor
+    tor-browser
     dprint
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
