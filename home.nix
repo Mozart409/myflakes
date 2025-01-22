@@ -80,6 +80,7 @@
     tor
     tor-browser
     dprint
+    nvtopPackages.full
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
