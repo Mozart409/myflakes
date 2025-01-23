@@ -104,6 +104,10 @@
     tor-browser
     dprint
     nvtopPackages.full
+    kubernetes-helm
+    helm-ls
+    helmsman
+    helmfile
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
