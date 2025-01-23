@@ -112,7 +112,7 @@
     sqlite
     sqlitestudio
     sqlite-analyzer
-    sql-studio
+    # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
