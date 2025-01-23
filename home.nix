@@ -110,7 +110,9 @@
     helmfile
     duckdb
     sqlite
-    sqlite-web
+    sqlitestudio
+    sqlite-analyzer
+    sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
