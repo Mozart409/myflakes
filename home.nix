@@ -108,6 +108,9 @@
     helm-ls
     helmsman
     helmfile
+    duckdb
+    sqlite
+    sqlite-web
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
