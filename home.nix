@@ -114,6 +114,7 @@
     sqlite-analyzer
     bat
     harlequin
+    python313Packages.harlequin-postgres
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
