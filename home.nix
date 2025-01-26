@@ -172,6 +172,7 @@
       l = "ls -lah";
       lg = "lazygit";
       k = "kubectl";
+      flk = "nvim ~/myflakes";
     };
     oh-my-zsh = {
       enable = true;
