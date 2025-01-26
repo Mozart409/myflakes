@@ -112,6 +112,8 @@
     sqlite
     sqlitestudio
     sqlite-analyzer
+    bat
+    harlequin
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
