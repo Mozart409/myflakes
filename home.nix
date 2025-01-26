@@ -114,6 +114,9 @@
     sqlite-analyzer
     bat
     harlequin
+    cargo-binstall
+    dioxus-cli
+    file
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
