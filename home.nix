@@ -117,6 +117,7 @@
     cargo-binstall
     dioxus-cli
     file
+    wasm-bindgen-cli
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
