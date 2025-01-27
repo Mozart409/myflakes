@@ -118,6 +118,7 @@
     dioxus-cli
     file
     wasm-bindgen-cli
+    pwgen
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
