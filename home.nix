@@ -181,6 +181,7 @@
       dps = "docker compose ps";
       dup = "docker compose up -d --build --remove-orphans";
       dwn = "docker compose down";
+      ld = "lazydocker";
     };
     oh-my-zsh = {
       enable = true;
