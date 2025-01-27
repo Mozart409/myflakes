@@ -118,7 +118,6 @@
     dioxus-cli
     file
     wasm-bindgen-cli
-    spacedrive
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
