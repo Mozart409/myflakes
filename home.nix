@@ -178,6 +178,9 @@
       lg = "lazygit";
       k = "kubectl";
       flk = "nvim ~/myflakes";
+      dps = "docker compose ps";
+      dup = "docker compose up -d --build --remove-orphans";
+      dwn = "docker compose down";
     };
     oh-my-zsh = {
       enable = true;
