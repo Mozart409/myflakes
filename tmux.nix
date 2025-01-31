@@ -11,10 +11,15 @@
     extraConfig = ''
       set-option -sa terminal-overrides ",xterm*:Tc"
       set -g mouse off
+      set-option -g allow-passthrough on
 
       unbind C-b
       set -g prefix C-Space
       bind C-Space send-prefix
+
+      # Shift arrow to switch windows
+      bind -n S-Left  previous-window
+      bind -n S-Right next-window
 
       # Vim style pane selection
       bind h select-pane -L

@@ -237,7 +237,10 @@
     extraConfig = {
       init.defaultBranch = "main";
       pull.rebase = "true";
-      credential.helper = "oauth";
+      credential = {
+        helper = "oauth";
+        cache = "--timeout 21600";
+      };
     };
   };
   programs.lazygit = {
