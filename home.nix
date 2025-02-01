@@ -120,6 +120,7 @@
     file
     wasm-bindgen-cli
     pwgen
+    devenv
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
