@@ -179,7 +179,7 @@
       l = "ls -lah";
       lg = "lazygit";
       k = "kubectl";
-      flk = "nvim ~/myflakes";
+      flk = "cd ~/myflakes";
       dps = "docker compose ps";
       dup = "docker compose up -d --build --remove-orphans";
       dwn = "docker compose down";
