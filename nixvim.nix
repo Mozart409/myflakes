@@ -175,8 +175,7 @@
             action = "buffers";
           };
 
-          /*
-             "<leader>/" = {
+          "<leader>/" = {
             options.desc = "[/] Fuzzily search in current buffer";
 
             action = ''
@@ -190,6 +189,7 @@
               end
             '';
           };
+          /*
           "<leader>s/" = {
             options.desc = "[S]earch [/] Fuzzily in open files";
 
