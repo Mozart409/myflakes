@@ -123,6 +123,7 @@
     devenv
     nix-prefetch
     nix-prefetch-github
+    glow
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
