@@ -121,6 +121,8 @@
     wasm-bindgen-cli
     pwgen
     devenv
+    nix-prefetch
+    nix-prefetch-github
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
