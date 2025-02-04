@@ -121,6 +121,22 @@
           keymaps = [
             {
               mode = "";
+              key = "<leader>S";
+              action = "<cmd>lua require('spectre').toggle()<CR>";
+              options = {
+                desc = "[S] to toggle Spectre";
+              };
+            }
+            {
+              mode = "";
+              key = "<leader>sw";
+              action = "<cmd>lua require('spectre').open_visual({select_word=true})<CR>";
+              options = {
+                desc = "[SW] Select word for Spectre";
+              };
+            }
+            {
+              mode = "";
               key = "<leader>m";
               action = ''
                 function()
