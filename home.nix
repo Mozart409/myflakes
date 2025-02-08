@@ -161,7 +161,7 @@
   #  /etc/profiles/per-user/amadeus/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "neovim";
+    EDITOR = "nvim";
   };
   home.sessionPath = [
     "/var/lib/flatpak/exports/share"
