@@ -124,6 +124,7 @@
     nix-prefetch
     nix-prefetch-github
     glow
+    pkg-configUpstream
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
