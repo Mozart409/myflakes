@@ -226,6 +226,11 @@
     enable = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    loadInNixShell = true;
+    enableZshIntegration = true;
+  };
   programs.git = {
     enable = true;
     userName = "Amadeus Mader";
