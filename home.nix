@@ -18,7 +18,6 @@
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
-      "docker-init"
       "cudaPackages.cudatoolkit"
       "cuda-merged"
       "cuda_cuobjdump"
@@ -125,6 +124,9 @@
     nix-prefetch-github
     glow
     pkg-configUpstream
+    dive
+    podman-tui
+    podman-compose
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
