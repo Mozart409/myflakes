@@ -99,7 +99,6 @@
     rclone
     vulnix
     mangojuice
-    docker-init
     tor
     tor-browser
     dprint
