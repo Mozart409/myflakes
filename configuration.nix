@@ -19,12 +19,25 @@
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
+  nix.settings = {
+    auto-optimise-store = true;
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
 
-  nix.gc.automatic = true;
+    trusted-users = [
+      "root"
+      "@wheel"
+      "nixos"
+      "amadeus"
+    ];
+  };
+
+  nix.gc = {
+    automatic = true;
+    options = "--delete-older-than 2d";
+  };
 
   nix.extraOptions = ''
     trusted-users = root amadeus
