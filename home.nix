@@ -126,6 +126,7 @@
     dive
     podman-tui
     podman-compose
+    duckdb
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
