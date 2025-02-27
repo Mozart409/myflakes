@@ -8,7 +8,7 @@
     extraPackages = with pkgs; [
       luaformatter
       stylua
-      biome
+      dprint
       ruff
       fixjson
       rustfmt
@@ -109,9 +109,9 @@
             python = ["ruff"];
             json = ["fixjson"];
             javascript = [
-              "biome"
+              "dprint"
             ];
-            typescript = ["biome"];
+            typescript = ["dprint"];
             yaml = ["yamlfmt"];
             go = ["goimports" "gofmt"];
             nix = ["alejandra"];
