@@ -179,9 +179,11 @@
     ];
     packages = with pkgs; [
       kdePackages.kate
-      thunderbird
+      # thunderbird
     ];
   };
+
+  users.extraGroups.docker.members = ["amadeus"];
 
   virtualisation.containers.enable = true;
 
@@ -196,6 +198,8 @@
       };
     };
   };
+
+  hardware.nvidia-container-toolkit.enable = true;
 
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
