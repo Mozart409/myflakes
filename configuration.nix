@@ -188,6 +188,12 @@
   virtualisation = {
     docker = {
       enable = true;
+      daemon.settings = {
+        userland-proxy = false;
+        experimental = true;
+        metrics-addr = "0.0.0.0:9323";
+        ipv6 = false;
+      };
     };
   };
 
