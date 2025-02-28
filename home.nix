@@ -126,7 +126,7 @@
     dive
     duckdb
     ladybird
-    brave
+    palemoon-bin
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
