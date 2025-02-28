@@ -190,6 +190,7 @@
   virtualisation = {
     docker = {
       enable = true;
+      autoPrune.enable = true;
       daemon.settings = {
         userland-proxy = false;
         experimental = true;
