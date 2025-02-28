@@ -125,6 +125,7 @@
     pkg-configUpstream
     dive
     duckdb
+    ladybird
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
