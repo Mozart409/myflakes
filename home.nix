@@ -124,8 +124,6 @@
     glow
     pkg-configUpstream
     dive
-    podman-tui
-    podman-compose
     duckdb
     # sql-studio
     # # fonts?

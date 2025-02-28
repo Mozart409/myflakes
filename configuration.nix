@@ -186,27 +186,9 @@
   virtualisation.containers.enable = true;
 
   virtualisation = {
-    podman = {
-      enable = true;
-      autoPrune.enable = true;
-      dockerCompat = true;
-      defaultNetwork.settings.dns_enabled = true;
-    };
     docker = {
-      enable = false;
+      enable = true;
     };
-  };
-
-  virtualisation.oci-containers.backend = "podman";
-
-  virtualisation.oci-containers.containers."ollama" = {
-    image = "ollama/ollama:0.5.11@sha256-133f9472bd0af4fc8dabd703a5ac535741c4f6b324a29e9c5f0cc4a272d0732d";
-    volumes = [
-      "ollama:/root/.ollama:rw"
-    ];
-    log-driver = "journald";
-    autoStart = true;
-    ports = ["11434:11434"];
   };
 
   # Enable automatic login for the user.
