@@ -126,6 +126,7 @@
     dive
     duckdb
     ladybird
+    brave
     # sql-studio
     # # fonts?
     # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
