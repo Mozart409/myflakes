@@ -86,6 +86,44 @@
       which-key = {
         enable = true;
       };
+      lspkind = {
+        enable = true;
+      };
+      cmp = {
+        autoEnableSources = true;
+        settings.sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+          {name = "buffer";}
+        ];
+      };
+
+      cmp-ai = {
+        enable = true;
+        settings = {
+          max_lines = 100;
+          provider = "Ollama";
+          provider_options = {
+            model = "qwen2.5-coder:3b";
+            temperature = 0.2;
+            prompt = ''
+              function(lines_before, lines_after)
+                    return "<|fim_prefix|>" .. lines_before .. "<|fim_suffix|>" .. lines_after .. "<|fim_middle|>"
+                  end
+            '';
+          };
+          notify = true;
+          notify_callback = ''
+            function(msg)
+              vim.notify(msg)
+            end
+          '';
+          run_on_every_keystroke = true;
+          ignored_file_types = {
+            lua = true;
+          };
+        };
+      };
 
       conform-nvim = {
         enable = true;
