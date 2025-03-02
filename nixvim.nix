@@ -99,7 +99,7 @@
       };
 
       cmp-ai = {
-        enable = true;
+        enable = false;
         settings = {
           max_lines = 100;
           provider = "Ollama";
